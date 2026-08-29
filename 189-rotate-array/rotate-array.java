@@ -7,9 +7,9 @@ class Solution {
     }
     public static void reverse(int[] nums, int left, int right){
         while(left<right){
-            nums[left]+=nums[right];
-            nums[right]= nums[left]-nums[right];
-            nums[left]= nums[left]-nums[right];
+            int temp= nums[left];
+            nums[left]= nums[right];
+            nums[right]= temp;
             left++;
             right--;
         }
