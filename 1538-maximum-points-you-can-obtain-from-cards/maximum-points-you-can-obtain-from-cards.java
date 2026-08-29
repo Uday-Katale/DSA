@@ -6,7 +6,7 @@ class Solution {
         for(int i =0; i<k;i++){
             lsum+=cardPoints[i];
         }
-        maxsum=Math.max(lsum+rsum, maxsum);
+        maxsum=lsum;
         for(int i=k-1; i>=0; i--){
             lsum-=cardPoints[i];
             rsum+=cardPoints[cardPoints.length-k+i];
