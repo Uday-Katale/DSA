@@ -8,7 +8,7 @@ class Solution {
             if (nums[i] >= fl) {
                 sl = fl;
                 fl = nums[i];
-            } else if (nums[i] <= fl && nums[i] >= sl) {
+            } else if ( nums[i] >= sl) {
                 sl = nums[i];
             }
         }
