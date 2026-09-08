@@ -3,10 +3,6 @@ class Solution {
         if(s.length()!= goal.length()){
             return false;
         }
-        String newString= s+s;
-        if(newString.contains(goal)){
-            return true;
-        }
-        return false;
+        return (s+s).contains(goal);
     }
 }
