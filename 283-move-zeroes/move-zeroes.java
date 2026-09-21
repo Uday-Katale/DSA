@@ -5,8 +5,7 @@ class Solution {
             if(nums[i]!= 0){
                 int temp= nums[i];
                 nums[i]=nums[point];
-                nums[point]= temp;
-                point ++;
+                nums[point++]= temp;
             }
         }
     }
