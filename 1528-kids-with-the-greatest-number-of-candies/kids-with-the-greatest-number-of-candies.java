@@ -1,16 +1,16 @@
 class Solution {
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
-        ArrayList<Boolean> res=new ArrayList<>();
-        int high= candies[0];
-        for(int i=1;i<candies.length;i++){
-            if(high<candies[i]){
+        ArrayList<Boolean> res = new ArrayList<>();
+        int high = candies[0];
+        for (int i = 1; i < candies.length; i++) {
+            if (high < candies[i]) {
                 high = candies[i];
             }
         }
-        for(int i  =0 ; i<candies.length;i++){
-            if((candies[i]+ extraCandies)>= high){
+        for (int i = 0; i < candies.length; i++) {
+            if ((candies[i] + extraCandies) >= high) {
                 res.add(true);
-            }else{
+            } else {
                 res.add(false);
             }
         }
