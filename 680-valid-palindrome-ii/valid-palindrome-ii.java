@@ -1,10 +1,7 @@
 class Solution {
     public boolean isPal(String s, int l, int r) {
-        while (l < r) {
-            if (s.charAt(l++) != s.charAt(r--)) {
-
-                return false;
-            }
+        while (l <= r) {
+            if (s.charAt(l++) != s.charAt(r--)) return false;
         }
         return true;
     }
@@ -15,7 +12,6 @@ class Solution {
         while (l < r) {
             if (s.charAt(l) != s.charAt(r)) {
                 return isPal(s, l + 1, r) || isPal(s, l, r - 1);
-
             }
             l++;
             r--;
