@@ -11,6 +11,7 @@ class Solution {
         int startOverlap = Math.max(arriveA, arriveB);
         int endOverlap = Math.min(leaveA, leaveB);
 
+
         if (startOverlap <= endOverlap) {
             return endOverlap - startOverlap + 1;
         }
@@ -23,12 +24,11 @@ class Solution {
         int day = Integer.parseInt(date.substring(3, 5));
 
         int dayOfYear = 0;
-        // Sum the days of all previous months
+
         for (int i = 0; i < month - 1; i++) {
             dayOfYear += daysInMonth[i];
         }
         
-        // Add the days of the current month
         return dayOfYear + day;
     }
 }
