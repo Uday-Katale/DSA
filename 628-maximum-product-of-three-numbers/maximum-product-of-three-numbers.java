@@ -16,14 +16,14 @@ class Solution {
             } else if (nums[i] > max3) {
                 max3 = nums[i];
             }
-            
-            if (nums[i]< min ){
+
+            if (nums[i] < min) {
                 min2 = min;
                 min = nums[i];
-            }else if(nums[i]<min2){
+            } else if (nums[i] < min2) {
                 min2 = nums[i];
             }
         }
-        return Math.max(max * max2 * max3,min*min2*max);
+        return Math.max(max * max2 * max3, min * min2 * max);
     }
 }
